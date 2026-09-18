@@ -1,0 +1,99 @@
+/* Element selectors */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 20px;
+}
+
+p {
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Id selector: page title */
+#main-title {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Class selector: section headings */
+.section-title {
+  color: maroon;
+  font-weight: bold;
+  border-bottom: 2px solid maroon;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: darkblue;
+  padding: 10px;
+}
+
+/* Class selector: nav links */
+.nav-link {
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  margin: 0 10px;
+  border: 2px solid white;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  background-color: maroon;
+  color: darkblue;
+}
+
+/* Player cards: */
+.players-row {
+  display: flex;
+  width: 100%;
+}
+
+/* Class selector: player cards */
+.player-card {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  background-color: white;
+  padding: 16px;
+  margin: 0 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.player-card:hover {
+  background-color: #eaeaf5;
+}
+
+.player-card h3 {
+  color: darkblue;
+}
+
+/* Player photo size */
+.player-photo {
+  width: 250px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+/* Quote styling */
+.quote {
+  background-color: #eaeaf5;
+  padding: 12px;
+  border-left: 4px solid darkblue;
+  font-style: italic;
+}
+
+/* Club logo image */
+.club-logo {
+  display: block;
+  margin: 16px auto;
+  border-radius: 8px;
+}
