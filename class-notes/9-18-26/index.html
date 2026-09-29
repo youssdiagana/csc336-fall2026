@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title> CSC 336 Fall 2026 - Javascript Day 1</title>
+        <style>
+            #demoDiv {
+                background-color: lightblue;
+            }
+
+            .randomList {
+                font-family:'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="demoDiv">
+            Inside Div
+        </div>
+        
+        <script>
+            console.log("hello world from inside index.html")
+            // line comment
+            /*
+                block comment
+            */
+            let foo = 9.4;
+            let bar = 10;
+            let sum = foo + bar;
+            console.log(sum);
+
+            if (sum > 20) {
+                console.log(sum + " is greater than 20 ");
+            } else {
+                console.log(sum + "is less than or equal to 20");
+            }
+
+            let i = 0;
+            while (i < 20) {
+                console.log ("hello");
+                i++;
+            }
+
+            for (let i = 0; i < 20; i++) {
+                console.log("hello");
+            }
+
+            function add3(a,b,c) {
+                let sumOfParams = a + b + c;
+                return sumOfParams;
+            }
+
+            console.log(add3(1, 6, 9));
+
+            // Create an empty object
+            let obj = {};
+            obj.x = 10;
+            obj.log = function(a) {
+                console.log(a);
+            }
+            obj.log("hello");
+
+
+            let demoDiv = document.querySelector("#demoDiv");
+            
+            for (let i = 0; i < 100; i++) {
+                let randomNumber = Math.random();
+                let newDiv = document.createElement("div");
+                newDiv.classList.add("randomList");
+                newDiv.innerHTML = randomNumber;
+                demoDiv.append(newDiv);
+            }
+
+        </script>
+    </body>
+</html>
