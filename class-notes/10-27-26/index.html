@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src = "https://cdn.jsdelivr.net/npm/p5@2.3.3/lib/p5.min.js"></script>
+        <script src = "./script.js"></script>
+    </head>
+    <body>
+        <script>
+
+            // let promise = fetch("https://pokeapi.co/api/v2/pokemon/1"); // fetch reuturns a promise
+            // promise.then((data)=>{
+            //     console.log("a - fetch resolved")
+            //     return data.json();
+            // }).then((json)=> {
+            //     console.log(json);
+            // })
+            // console.log("b - This runs after fetch")
+
+
+            async function getPokemon(id) {
+                let response = await fetch("https://pokeapi.co/api/v2/pokemon/" + id);
+                let json = await response.json();
+                console.log(json);
+            }
+
+
+        </script>
+    </body>
+</html>
